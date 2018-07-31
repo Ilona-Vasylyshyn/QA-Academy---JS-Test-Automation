@@ -8,7 +8,15 @@ stdin.addListener("data", (txt) => {
         console.log("\nHave a nice JS trip! Bye-bye");
         stdin.end();
     } else {
-        console.log(`\nHi ${txt.toString().trim()}, nice to meet you at Eleks QA Academy 2018. I am sure you'll become great in your job.`);
-        console.log(`${txt.toString().trim()}, to quit this application you can use 'Ctrl + C' keys, or type 'quit' and hit 'Enter'`); 
+        //console.log(`\nHi ${txt.toString().trim()}, nice to meet you at Eleks QA Academy 2018. I am sure you'll become great in your job.`);
+        //console.log(`${txt.toString().trim()}, to quit this application you can use 'Ctrl + C' keys, or type 'quit' and hit 'Enter'`); 
+
+        function abbrev (str) {
+        	let res = str.split(" ");
+
+        	return res[0][0] + "." + res[1][0] + ".";
+        }
+
+        console.log(abbrev("Nazar Nabii"));
     }   
 });
