@@ -18,7 +18,7 @@ stdin.addListener("data", (txt) => {
 			resolve();
 		}, 3000)).then(() => {
 			console.log(`4 step`);
-		})
+		});
 
     }   
 });
