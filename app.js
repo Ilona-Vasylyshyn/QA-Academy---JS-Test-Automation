@@ -21,5 +21,7 @@ stdin.addListener("data", (txt) => {
 		
 		car.displayInfo();
 		truck.displayInfo();
+		
+	    Car.colorRoof();
 	}   
 });

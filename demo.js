@@ -23,6 +23,10 @@ class Car extends Vehicle {
 	transportPeople() {
 		console.log(`I am starting transporting passengers`);
 	}
+	
+	static colorRoof() {
+		console.log('The method colorRoof has been called');
+	}
 }
 module.exports.Car = Car;
 
