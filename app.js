@@ -19,8 +19,8 @@ stdin.addListener("data", (txt) => {
 		car.transportPeople();
 		truck.transportContainer();
 		
-		car.displayInfo();
-		truck.displayInfo();
+		car.displayInfo(); //father class must be called
+		truck.displayInfo(); //father class must be called
 		
 	    Car.colorRoof();
 	}   
