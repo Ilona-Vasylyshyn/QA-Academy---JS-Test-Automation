@@ -1,4 +1,6 @@
-const {Vehicle, Car, Truck} = require('./demo');
+const Vehicle = require('./vehicle');
+const Car = require('./car');
+const Truck = require('./truck');
 
 console.log("\nNice work! Your first application have been launched.");
 console.log("Now, I need to know your name, type it below: ");
