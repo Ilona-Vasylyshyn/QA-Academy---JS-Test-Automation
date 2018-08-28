@@ -1,4 +1,4 @@
-console.log("\nNice work! Your first application have been launched.");
+//console.log("\nNice work! Your first application have been launched.");
 console.log("Now, I need to know your name, type it below: ");
 
 let stdin = process.openStdin();
