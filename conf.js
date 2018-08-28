@@ -4,5 +4,8 @@ exports.config = {
 	specs: ['spec.js'],
 	capabilities: {
 		browserName: "firefox"
-	}
+	},
+	onPrepare: function() {
+    	console.log('Test execution has started');
+  	}
 };
