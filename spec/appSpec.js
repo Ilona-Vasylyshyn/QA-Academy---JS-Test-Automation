@@ -1,25 +1,21 @@
-function addTwoIntegers (a, b) {
-	return parseInt(a, 10) + parseInt(b, 10);
+function compareNumbers(a, b) {
+	return a === 50 || b === 50 || (a + b) === 50;
 }
 
-describe('Add two integers:', function() {
-	it ('correct adding integers', function() {
-		expect(addTwoIntegers(10, 20)).toBe(30);
+describe('Compare Numbers:', function() {
+	it ('compare numbers when first number is 50', function () {
+		expect(compareNumbers(50, 10)).toBe(true);
 	});
 
-	it ('incorrect adding integer and string', function() {
-		expect(addTwoIntegers(10, 'a')).toBeNaN();
+	it ('compare numbers when second number is 50', function () {
+		expect(compareNumbers(10, 50)).toBe(true);
 	});
 
-	it ('correct adding integer and number in string', function() {
-		expect(addTwoIntegers(10, '11')).toBe(21);
+	it ('compare numbers when the sum of two numbers is 50', function () {
+		expect(compareNumbers(10, 40)).toBe(true);
 	});
 
-	it ('correct adding integer and float', function() {
-		expect(addTwoIntegers(10, 10.1)).toBe(20);
-	});
-
-	it ('correct adding positive and negative integers', function() {
-		expect(addTwoIntegers(10, -5)).toBe(5);
+	it ('compare invalid numbers', function () {
+		expect(compareNumbers(11, 40)).toBe(false);
 	});
 });
