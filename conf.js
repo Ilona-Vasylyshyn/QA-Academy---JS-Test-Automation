@@ -7,5 +7,11 @@ exports.config = {
 	},
 	onPrepare: function() {
     	console.log('Test execution has started');
-  	}
+  	},
+	params: {
+		calculator: {
+			a: 1,
+			b: 2
+		}
+	}
 };
