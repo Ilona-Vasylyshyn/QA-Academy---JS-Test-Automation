@@ -1,0 +1,1 @@
+Before running test please put the correct siteURL, login, password, firstName and lasstName into confgs/conf.js and into the test if needed
