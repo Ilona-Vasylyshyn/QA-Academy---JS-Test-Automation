@@ -1,9 +1,5 @@
-let WebButton = require("../controls/web.button");
-let WebTextInput = require("../controls/web.text-input");
-let WebText = require("../controls/web.text");
-
-const LoginPage = require('./../page-objects/login-page');
-const ProductsPage = require('./../page-objects/products-page');
+const LoginPage = require('./../pages-object/login-page');
+const ProductsPage = require('./../pages-object/products-page');
 
 describe('Login Functionality', () => {
 
