@@ -1,11 +1,7 @@
-let WebButton = require("../controls/web.button");
-let WebTextInput = require("../controls/web.text-input");
-let WebText = require("../controls/web.text");
+const LoginPage = require('./../page-objects/login.page');
+const ProductsPage = require('./../page-objects/products.page');
 
-const LoginPage = require('./../page-objects/login-page');
-const ProductsPage = require('./../page-objects/products-page');
-
-describe('Login Functionality', () => {
+xdescribe('Login Functionality', () => {
 
     beforeEach(async() => {
          await browser.restart();

@@ -27,6 +27,11 @@ class WebControl {
         console.log(`Click on ${this.constructor.name} \"${this.controlTitle}\"`)
         await this.getBaseControlWebElement().click();
     }
+
+    async isDisplayed () {
+        await this.initializeWebControl();
+        return await this.getBaseControlWebElement().isDisplayed();
+    }
 };
 
 module.exports = WebControl;

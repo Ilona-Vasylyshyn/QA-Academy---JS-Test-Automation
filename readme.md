@@ -10,7 +10,6 @@ params: {
 			password: "<password>"
 		},
 		siteUrl: "<siteUrl>"
-	},
 }
 ```
 into confgs/conf.js and into the test if needed.

@@ -1,6 +1,6 @@
 let WebControl = require("../base/web.control");
 
-class WebTextInput extends WebControl {
+class WebText extends WebControl {
     constructor(webElement, title) {
         super(webElement, title);
     }
@@ -12,4 +12,4 @@ class WebTextInput extends WebControl {
     }
 }
 
-module.exports = WebTextInput;
+module.exports = WebText;
