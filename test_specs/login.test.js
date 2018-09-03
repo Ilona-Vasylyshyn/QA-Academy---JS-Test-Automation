@@ -1,7 +1,7 @@
 const LoginPage = require('./../page-objects/login.page');
 const ProductsPage = require('./../page-objects/products.page');
 
-xdescribe('Login Functionality', () => {
+describe('Login Functionality', () => {
 
     beforeEach(async() => {
          await browser.restart();
