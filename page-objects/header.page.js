@@ -24,9 +24,11 @@ class HeaderPag {
 	}
 
 	async goToAdministration () {
-		browser.waitForAngularEnabled(false);
+		const productIsDisplayed = EC.visibilityOf(this.getAdministrationMenu().getBaseControlWebElement());
+		await browser.waitForAngularEnabled(false);
+		await browser.wait(productIsDisplayed,  5 * 1000);
 		await this.getAdministrationMenu().click();
-		browser.waitForAngularEnabled(true);
+		await browser.waitForAngularEnabled(true);
 	}
 
 	async isHeaderVisible() {

@@ -26,7 +26,7 @@ describe('Login Functionality', () => {
             expect(name).toEqual(`${browser.params.user.firstName} ${browser.params.user.lastName}`);
         })();
     });
-      
+
     it('User should not be able to login with incorrecEmail. Error should appear', async () => {
         const loginPage = new LoginPage();
 
@@ -43,7 +43,7 @@ describe('Login Functionality', () => {
                 await loginPage.pressSignIn();
 
                 let errorMessage = await loginPage.getEmailErrorMessage();
-
+                console.log('error message check');
                 expect(errorMessage).toEqual('Email is not valid');
             }
         )();

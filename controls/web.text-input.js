@@ -8,7 +8,7 @@ class WebTextInput extends WebControl {
     async sendKeys (text) {
 		await this.initializeWebControl();
  		console.log(`Send \"${text}\" to ${this.constructor.name} \"${this.controlTitle}\"`);
-		await this.getBaseControlWebElement().sendKeys(text);
+		await this.getBaseControlWebElement().clear().sendKeys(text);
     }
 }
 

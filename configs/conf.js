@@ -9,18 +9,6 @@ exports.config = {
 	capabilities: {
 		browserName: "firefox"
 	},
-	seleniumAddress: 'http://localhost:4444/wd/hub',
-	params: {
-		user: {
-			firstName: "Ilona",
-			lastName: "Vasylyshyn"
-		},
-		credentials: {
-			login: "ilona.vasylyshyn@gmail.com",
-			password: "pw(+Goru1@h"
-		},
-		siteUrl: "http://eds_university.eleks.com"
-	},
 	onPrepare: function(){
 		jasmine.getEnv().addReporter(new AllureReporter({
 			resultsDir: 'allure-results'
@@ -33,10 +21,9 @@ exports.config = {
 				return new Buffer(screenshotFile, "base64");
 			}, 'image/png')();
 		});
-		// jasmine.getEnv().addReporter(new function(){
-		// 	this.specDone = async (result) => {
-
-		// 	}
-		// });
+	},
+	seleniumAddress: 'http://localhost:4444/wd/hub',
+	params: {
+		
 	}
 };
